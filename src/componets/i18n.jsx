@@ -2,8 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { useCookies } from "react-cookie";
 
-import enTranslation from "../translate/en/en.json";
-import esTranslation from "../translate/es/es.json";
+import enTranslation from "../../build/translate/en/en.json";
+import esTranslation from "../../build/translate/es/es.json";
 
 const resources = {
   en: {

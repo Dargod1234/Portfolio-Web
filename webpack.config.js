@@ -1,5 +1,6 @@
 const { EnvironmentPlugin } = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 const ruleForJavaScript = {
@@ -67,7 +68,7 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({ template: "src/assests/index.html" }),
       new CopyWebpackPlugin({
-        patterns: [{ from: "locales/**/*", to: "locales" }],
+        patterns: [{ from: "build/**/*", to: "build" }],
       }),
       new EnvironmentPlugin({
         FIREBASE_API_KEY: "AIzaSyAy9rqllJ0hJdv9fUQZbHOSgxJNhV5IbWY",
