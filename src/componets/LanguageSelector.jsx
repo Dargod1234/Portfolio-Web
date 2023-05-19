@@ -5,7 +5,11 @@ const LanguageSelector = () => {
   const { changeLanguage } = useTranslationWithCookies();
 
   const handleLanguageChange = (language) => {
-    changeLanguage(language);
+    const updateLanguage = () => {
+      changeLanguage(language);
+    };
+
+    updateLanguage();
   };
 
   return (
