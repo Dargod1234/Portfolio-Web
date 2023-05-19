@@ -1,10 +1,17 @@
 import React from "react";
+import { useTranslationWithCookies } from "../componets/i18n.jsx";
 
-const LanguageSelector = ({ onSelectLanguage }) => {
+const LanguageSelector = () => {
+  const { changeLanguage } = useTranslationWithCookies();
+
+  const handleLanguageChange = (language) => {
+    changeLanguage(language);
+  };
+
   return (
     <div>
-      <button onClick={() => onSelectLanguage("es")}>Es</button>
-      <button onClick={() => onSelectLanguage("en")}>En</button>
+      <button onClick={() => handleLanguageChange("es")}>Es</button>
+      <button onClick={() => handleLanguageChange("en")}>En</button>
     </div>
   );
 };

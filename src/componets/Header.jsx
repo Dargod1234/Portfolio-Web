@@ -32,6 +32,9 @@ const Header = () => {
 
   return (
     <header className="fixed z-50 flex h-[10vh] w-full items-center justify-around p-10 shadow-md xl:justify-start">
+      <button className="static">
+        <RiContrast2Line />
+      </button>
       <nav
         className={`
         ${
@@ -79,9 +82,6 @@ const Header = () => {
       </button>
       <LanguageSelector onSelectLanguage={handleLanguageChange} />
       <h1 className="static">&nbsp;/&nbsp;</h1>
-      <button className="static">
-        <RiContrast2Line />
-      </button>
     </header>
   );
 };

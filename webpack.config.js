@@ -68,7 +68,7 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({ template: "src/assests/index.html" }),
       new CopyWebpackPlugin({
-        patterns: [{ from: "build/**/*", to: "build" }],
+        patterns: [{ from: "build/**/*", to: "[path][name].[ext]" }],
       }),
       new EnvironmentPlugin({
         FIREBASE_API_KEY: "AIzaSyAy9rqllJ0hJdv9fUQZbHOSgxJNhV5IbWY",
