@@ -1,16 +1,15 @@
-import React from "react";
-import { useTranslationWithCookies } from "../componets/i18n.jsx";
-
 const LanguageSelector = () => {
   const { changeLanguage } = useTranslationWithCookies();
 
   const handleLanguageChange = (language) => {
-    const updateLanguage = () => {
-      changeLanguage(language);
-    };
-
-    updateLanguage();
+    document.cookie = `firebase-language-override=${language}`;
+    console.log(`Seleccionado idioma: ${language}`);
   };
+
+  useEffect(() => {
+    const selectedLanguage = getSelectedLanguageFromCookie();
+    changeLanguage(selectedLanguage);
+  }, []);
 
   return (
     <div>
