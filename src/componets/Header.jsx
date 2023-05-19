@@ -3,10 +3,12 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { RiContrast2Line } from "react-icons/ri";
 import LanguageSelector from "./LanguageSelector.jsx";
 import { useTranslation } from "react-i18next";
+import LanguageContext from "./LanguageContext.jsx";
 
 const Header = () => {
   const { t } = useTranslation();
   const [showMenu, setShowMenu] = React.useState(false);
+  const [language, setLanguage] = React.useState("es");
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
@@ -22,7 +24,7 @@ const Header = () => {
   };
 
   const handleLanguageChange = (languageCode) => {
-    document.cookie = `firebase-language-override=${languageCode}`;
+    // Aquí puedes realizar cualquier acción adicional necesaria
     console.log(`Seleccionado idioma: ${languageCode}`);
   };
 

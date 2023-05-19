@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { I18nextProvider } from "react-i18next";
 import i18n from "../componets/i18n.jsx";
+import LanguageContext from "../componets/LanguageContext.jsx";
 
 function App() {
   const firebaseConfig = {
@@ -19,11 +20,19 @@ function App() {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 
+  const [language, setLanguage] = React.useState("en");
+
+  const handleLanguageChange = (selectedLanguage) => {
+    setLanguage(selectedLanguage);
+  };
+
   return (
     <I18nextProvider i18n={i18n}>
-      <div className="dark:bg-gray-900 dark:text-white">
-        <Home />
-      </div>
+      <LanguageContext.Provider value={{ language, setLanguage }}>
+        <div className="dark:bg-gray-900 dark:text-white">
+          <Home />
+        </div>
+      </LanguageContext.Provider>
     </I18nextProvider>
   );
 }

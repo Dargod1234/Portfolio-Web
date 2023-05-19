@@ -1,9 +1,10 @@
-const LanguageSelector = () => {
+const LanguageSelector = ({ onSelectLanguage }) => {
   const { changeLanguage } = useTranslationWithCookies();
 
   const handleLanguageChange = (language) => {
     document.cookie = `firebase-language-override=${language}`;
     console.log(`Seleccionado idioma: ${language}`);
+    onSelectLanguage(language);
   };
 
   useEffect(() => {
