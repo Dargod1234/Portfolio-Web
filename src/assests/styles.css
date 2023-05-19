@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes buzz {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.logo-skills:hover {
+  animation: buzz 0.5s ease-in-out 2;
+}
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.proyecto {
+  margin-bottom: 1rem;
+}
+
+.proyecto-img {
+  width: 250px;
+  height: 150px;
+  border: 2px solid rgb(125, 75, 172);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.proyecto img {
+  padding-top: 13px;
+  padding-left: 15px;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.proyecto h3 {
+  border-left: 2px solid rgb(125, 75, 172);
+  border-right: 2px solid rgb(125, 75, 172);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.proyecto button {
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
