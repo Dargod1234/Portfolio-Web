@@ -1,3 +1,6 @@
+import { useTranslationWithCookies } from "../componets/i18n.jsx";
+
+
 const LanguageSelector = ({ onSelectLanguage }) => {
   const { changeLanguage } = useTranslationWithCookies();
 
