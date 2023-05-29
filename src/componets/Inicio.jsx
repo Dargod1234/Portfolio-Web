@@ -1,6 +1,7 @@
-import React from "react";
-import { GiHand } from "react-icons/gi";
-import img from "../../public/img/Damian.jpeg";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { GiHand } from 'react-icons/gi'
+import img from '../../public/img/Damian.jpeg'
 
 const inicio = () => {
   return (
@@ -47,7 +48,7 @@ const inicio = () => {
         ></img>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default inicio;
+export default inicio

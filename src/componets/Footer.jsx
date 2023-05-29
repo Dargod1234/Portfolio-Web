@@ -1,8 +1,9 @@
-import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { BsWhatsapp } from "react-icons/bs";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { BsWhatsapp } from 'react-icons/bs'
 
-function Footer() {
+function Footer () {
   return (
     <footer className="flex justify-center p-5">
       <div className="flex flex-col">
@@ -25,6 +26,7 @@ function Footer() {
             href="https://github.com/Dargod1234"
             target="_blank"
             className=" m-2"
+            rel="noreferrer"
           >
             <AiFillGithub className=" text-3xl" />
           </a>
@@ -32,16 +34,22 @@ function Footer() {
             href="https://www.linkedin.com/in/damian-arguello-8a6199177/"
             target="_blank"
             className=" m-2"
+            rel="noreferrer"
           >
             <AiFillLinkedin className="text-3xl" />
           </a>
-          <a href="https://wa.me/573188951928" target="_blank" className="m-2">
+          <a
+            href="https://wa.me/573188951928"
+            target="_blank"
+            className="m-2"
+            rel="noreferrer"
+          >
             <BsWhatsapp className="text-3xl" />
           </a>
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

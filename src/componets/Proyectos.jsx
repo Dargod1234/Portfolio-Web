@@ -1,7 +1,8 @@
-import React from "react";
-import ProjectList from "./ListaProyectos.jsx";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import ProjectList from './ListaProyectos.jsx'
 
-function Proyectos() {
+function Proyectos () {
   return (
     <div id="proyectos" className=" pb-16">
       <div className="flex justify-center">
@@ -11,7 +12,7 @@ function Proyectos() {
       </div>
       <ProjectList />
     </div>
-  );
+  )
 }
 
-export default Proyectos;
+export default Proyectos

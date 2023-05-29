@@ -67,15 +67,6 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({ template: "src/assests/index.html" }),
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: "build/translate/**/*",
-            to: "[path][name].[ext]",
-            force: true,
-          },
-        ],
-      }),
       new EnvironmentPlugin({
         FIREBASE_API_KEY: "AIzaSyAy9rqllJ0hJdv9fUQZbHOSgxJNhV5IbWY",
         FIREBASE_AUTH_DOMAIN: "mi-portafolio-51d71.firebaseapp.com",

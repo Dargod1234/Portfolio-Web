@@ -1,12 +1,13 @@
-import React from "react";
-import js from "../../public/img/js.png";
-import css from "../../public/img/css.png";
-import node from "../../public/img/nodejs.png";
-import php from "../../public/img/php.png";
-import react from "../../public/img/react.png";
-import tailwind from "../../public/img/tailwind.png";
-import webpack from "../../public/img/webpack.png";
-import wordpress from "../../public/img/wordpress.png";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import js from '../../public/img/js.png'
+import css from '../../public/img/css.png'
+import node from '../../public/img/nodejs.png'
+import php from '../../public/img/php.png'
+import react from '../../public/img/react.png'
+import tailwind from '../../public/img/tailwind.png'
+import webpack from '../../public/img/webpack.png'
+import wordpress from '../../public/img/wordpress.png'
 
 const skills = () => {
   return (
@@ -123,7 +124,7 @@ const skills = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default skills;
+export default skills

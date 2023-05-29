@@ -1,16 +1,15 @@
-import React from "react";
-import { Element } from "react-scroll";
-import { useTranslation } from "react-i18next";
-import Inicio from "../componets/Inicio.jsx";
-import Skills from "../componets/skills.jsx";
-import Proyectos from "../componets/Proyectos.jsx";
-import Contacto from "../componets/Contacto.jsx";
-import Header from "../componets/Header.jsx";
-import Footer from "../componets/Footer.jsx";
-import "../assests/shooting.scss";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { Element } from 'react-scroll'
+import Inicio from '../componets/Inicio.jsx'
+import Skills from '../componets/skills.jsx'
+import Proyectos from '../componets/Proyectos.jsx'
+import Contacto from '../componets/Contacto.jsx'
+import Header from '../componets/Header.jsx'
+import Footer from '../componets/Footer.jsx'
+import '../assests/shooting.scss'
 
 const Home = () => {
-  const { t } = useTranslation();
   return (
     <div className="h-[100vh] overflow-auto">
       <div className="stars -z-50">
@@ -43,7 +42,7 @@ const Home = () => {
         <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

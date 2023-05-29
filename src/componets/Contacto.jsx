@@ -1,6 +1,7 @@
-import React from "react";
-import "../assests/contact.css";
-import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import '../assests/contact.css'
+import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 
 const Contacto = () => {
   return (
@@ -71,7 +72,7 @@ const Contacto = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contacto;
+export default Contacto
